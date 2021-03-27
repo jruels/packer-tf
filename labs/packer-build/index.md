@@ -30,7 +30,7 @@ We'll start by creating the entire template, then we'll go over each section bri
 
 Create a file `example.pkr.hcl` and fill it with the following contents:
 
-```json
+```hcl2
 # If you don't set a default, then you will need to provide the variable
 # at run time using the command line, or set it in the environment. 
 variable "ami_name" {
