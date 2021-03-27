@@ -1,4 +1,4 @@
-# Packer and Terraform
+# Packer and Terraform Classpage
 
 This site includes the slides and labs for the Packer and Terraform class.
 
