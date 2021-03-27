@@ -6,7 +6,7 @@
 * Build an AWS image (AMI)
 
 ### Overview
-Packer can build images for many platforms other than AWS, but AWS requires no additional software installed on your computer and their free-tier makes it free to use for most people. This is why we chose to use AWS for the example. 
+Packer can build images for many platforms other than AWS, but AWS requires no additional software installed on your computer, and their free-tier makes it free to use for most people. This is why we chose to use AWS for the example. 
 
 ### Install Packer
 The first thing we need to do is install Packer. To install the latest version (1.7.0), run the following: 
@@ -24,7 +24,7 @@ cd $(date +%Y%m%d)/packer/
 ```
 The configuration file used to define what image we want built and how is called a *template* in Packer terminology. Packer templates use the Hashicorp Configuration Language (HCL).
 
-We'll start by creating the entire template, then we'll go over each section briefly. 
+We'll start by creating the entire template; then we'll go over each section briefly. 
 
 Create a file `example.pkr.hcl` and fill it with the following contents:
 
@@ -71,7 +71,7 @@ The additional keys within the source block are configuration for this builder, 
 
 
 ### Validate Template
-Before we take this template and build an image from it, let's validate the template by running `packer validate example.pkr.hcl`. This command checks the syntax as well as the configuration values to verify they look valid. If the the template is valid there should not be any output. If there are any errors, this command will tell you.
+Before we take this template and build an image from it, let's validate the template by running `packer validate example.pkr.hcl`. This command checks the syntax as well as the configuration values to verify they look valid. If the template is valid, there should not be any output. If there are any errors, this command will tell you.
 
 ```bash
 packer validate example.pkr.hcl
