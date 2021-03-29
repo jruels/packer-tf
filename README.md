@@ -6,7 +6,7 @@ This site includes the slides and labs for the Packer and Terraform class.
 ## Course Content   
 [Slides day 1](https://www.dropbox.com/s/rzq7yslur4cvfer/Packer%20and%20Terraform-day1.pdf?dl=0)   
 
-## Labs   
+## Labs
 ### Day 1   
 Lab 0: [Setup environment](labs/lab-setup/)   
 Lab 1: [Build Packer image](labs/packer-build)   
