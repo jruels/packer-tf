@@ -17,11 +17,11 @@ WELCOME TO PACKER!
 
 Create a file named `example.sh` and add: 
 ```sh
-#!/binbash
+#!/bin/bash
 echo "hello"
 ```
 
-Create a template named `firstrun.pkg.hcl` and populate with:
+Create a template named `firstrun.pkr.hcl` and populate with:
 ```hcl
 variable "ami_name" {
   type = string
