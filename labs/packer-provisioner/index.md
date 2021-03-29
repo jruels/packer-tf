@@ -21,6 +21,11 @@ Create a file named `example.sh` and add:
 echo "hello"
 ```
 
+Add execute permissions to `example.sh`
+```sh
+chmod +x example.sh
+```
+
 Create a template named `firstrun.pkr.hcl` and populate with:
 ```hcl
 variable "ami_name" {
