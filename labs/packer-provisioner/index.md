@@ -1,9 +1,8 @@
 # Packer Lab 2
 
 ## Lab objectives: 
-* Introduce a provisioner
-* Update template to use new provisioner
-
+* Introduce provisioners
+* Update template to use new provisioners
 ### Using provisioners
 Enter your working directory: 
 ```sh
