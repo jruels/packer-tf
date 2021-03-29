@@ -10,8 +10,8 @@ This site includes the slides and labs for the Packer and Terraform class.
 ## Labs   
 
 ### Day 1   
+Lab 0: [Setup environment](labs/lab-setup/)
 Lab 1: [Build Packer image](labs/packer-build)   
 Lab 2: [Packer Provisioners](labs/packer-provisioner)   
 
-### Day 2   
 
