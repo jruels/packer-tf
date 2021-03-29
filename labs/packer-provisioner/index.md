@@ -94,7 +94,7 @@ source_ami = "ami-fceotj67
 After running your `packer build` you should see output stating the image was created successfully. Review the output and confirm the provisioners ran without error.
 
 ### Install packages
-We'll use the built-in shell provisioner that comes with Packer to install Redis. Modify the `example.pkr.hcl` template we made in the previous lab and add the following. provisioner block inside of the already-existing build block. We'll explain the various parts of the new configuration following the code block below.
+We'll use the built-in shell provisioner that comes with Packer to install Redis. Modify the `example.pkr.hcl` template we made in the previous lab and add the following provisioner block inside of the already-existing build block. We'll explain the various parts of the new configuration following the code block below.
 ```hcl
 build {
   sources = ["source.amazon-ebs.example"]
