@@ -14,7 +14,7 @@ The configuration in `main.tf` includes hard-coded values. Terraform variables a
 
 Add a variable to define the instance name. 
 
-Create a new file called `variables.tf` with a block that defines a new instance_name variable. 
+Create a new file called `variables.tf` with a block that defines a new `instance_name` variable. 
 
 ```hcl
 variable "instance_name" {
@@ -26,14 +26,14 @@ variable "instance_name" {
 
 Now update the `main.tf` `aws_instance` resource block to use our new variable. 
 
-```hcl
+```
   tags = {
     Name = var.instance_name
   }
 ```
 
 We also need to update the resource name in `main.tf` to `lab2-tf-example`
-```hcl
+```
 ..snip
 resource "aws_instance" "lab2-tf-example" {
   ami           = "ami-830c94e3"
