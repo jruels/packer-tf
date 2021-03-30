@@ -12,4 +12,6 @@ Lab 0: [Setup environment](labs/lab-setup/)
 Lab 1: [Build Packer image](labs/packer-build)   
 Lab 2: [Packer Provisioners](labs/packer-provisioner)   
 
-
+### Day 2   
+Lab 3: [Create a resource](labs/tf-first-instance)   
+Lab 4: [Variables and output](labs/tf-variables-and-output)   
