@@ -8,7 +8,7 @@ Input variables make Terraform configurations more flexible by defining values t
 ## Setup lab files 
 Under our working directory create a `tf-lab3` directory:
 ```sh
-mkdir tf-lab3
+mkdir tf-lab3 
 cd $_
 ```
 
@@ -41,7 +41,7 @@ The infrastructure will be created,  but we want our code to be reusable.
 
 ## Using Parameters
 
-You can define variables anywhere in your configuration files, but the recommended approach is to declare them in a `variables.tf` file. This makes is the standard and makes it easier for users to understand how the configuration should be customized. 
+You can define variables anywhere in your configuration files, but the recommended approach is to declare them in a `variables.tf` file. This is the standard and makes it easier for users to understand how the configuration should be customized. 
 
 To parameterize an argument with an input variable, you will first define the variable in `variables.tf`, then replace the hard-coded value with a reference to that variable in your configuration.
 
@@ -61,7 +61,7 @@ Our variable block has three optional arguments.
 - Type: The type of data contained in the variable.
 - Default: The default value of the variable.
 
-It is recommended to set a description and type for all variables. When practical you should also set a default value.
+It is recommended to set a description and type for all variables. When practical, you should also set a default value.
 
 If you do not set a default value, you must assign a value before Terraform can apply the configuration.
 
@@ -98,5 +98,5 @@ Update the EC2 instances resource to use the `instance_count` variable in `main.
 Now Terraform will convert the values into the correct type. The `instance_count` variable would also work using a string ( "2" ) instead of number ( 2 ). 
 
 
-Apply the configuration and confirm the correct number of instances was created. 
+Once again the variables added have the same values as the original hard-coded values. Run `terraform apply` and you'll see it does not need to make any changes.
 

@@ -3,7 +3,7 @@
 ## Overview 
 Terraform supports several variable types including bool, string and numbers.
 
-The following steps continue where the previous lab left off. The below changes should be applied in the `tf-lab3` directory.
+
 ## VPN gateway support
 
 Use a `bool` type variable to control whether your VPC is configured with a VPN gateway. Add a declaration for the `enable_vpn_gateway` to `variables.tf`
