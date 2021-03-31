@@ -185,7 +185,7 @@ variable "resource_tags" {
 Setting the type to `map(string)` tells Terraform to expect strings for the values in the map. Map keys are always strings. Like dictionaries or maps from programming languages, you can retrieve values from a map with the corresponding key. See how this works with the Terraform console.
 
 ```sh
-var.resource.tags["environment"]
+var.resource_tags["environment"]
 ```
 
 output: 
