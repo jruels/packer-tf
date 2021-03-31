@@ -10,7 +10,6 @@ Under our working directory create a `tf-lab3` directory:
 ```sh
 mkdir tf-lab2 
 cd $_
-cp ../tf-lab1/main.tf . 
 ```
 
 In the new working directory clone the GitHub repository:
@@ -75,7 +74,7 @@ You can refer to variables in your configuration with `var.<variable_name>`.
 
 Edit the provider block in `main.tf` to use the new `aws_region` variable.
 
-Add a declaration for the vpc_cidr_block variable to variables.tf with the following: 
+Add a declaration for the `vpc_cidr_block` variable to `variables.tf` with the following: 
 - variable name: `vpc_cidr_block`
 - description: `CIDR block for VPC`
 - type: `string`
