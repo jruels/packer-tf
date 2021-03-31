@@ -21,5 +21,5 @@ Lab 4: [Variables and output](labs/tf-variables-and-output)
 ### Day 3 
 Lab 5: [Multi resource deployment](labs/tf-more-variables)   
 Lab 6: [Strings, bool, and numbers](labs/tf-even-more-variables)   
-Lab 7: [Enable remote state](tf-remote-state)   
+Lab 7: [Enable remote state](labs/tf-remote-state)   
 
