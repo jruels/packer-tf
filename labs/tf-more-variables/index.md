@@ -41,7 +41,7 @@ The infrastructure will be created,  but we want our code to be reusable.
 
 ## Using Parameters
 
-You can define variables anywhere in your configuration files, but the recommended approach is to declare them in a `variables.tf` file. This makes is the standard and makes it easier for useres to understand how the configuration should be customized. 
+You can define variables anywhere in your configuration files, but the recommended approach is to declare them in a `variables.tf` file. This makes is the standard and makes it easier for users to understand how the configuration should be customized. 
 
 To parameterize an argument with an input variable, you will first define the variable in `variables.tf`, then replace the hard-coded value with a reference to that variable in your configuration.
 
