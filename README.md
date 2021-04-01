@@ -23,3 +23,5 @@ Lab 5: [Multi resource deployment](labs/tf-more-variables)
 Lab 6: [Strings, bool, and numbers](labs/tf-even-more-variables)   
 Lab 7: [Enable remote state](labs/tf-remote-state)   
 
+### Day 4
+Lab 8: [Import existing resources](labs/tf-import)   
