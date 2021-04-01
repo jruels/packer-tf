@@ -19,6 +19,10 @@ Other arguments to module blocks are treated as input variables to the modules.
 ## Create Terraform configuration
 Now use modules to create an example AWS environment using a Virtual Private Cloud (VPC) and two EC2 instances.
 
+Create working directory
+```sh
+
+```
 Clone the GitHub repository.
 ```sh
 git clone https://github.com/jruels/learn-terraform-modules.git
@@ -143,15 +147,9 @@ You should now see the instance IP address and vpc public subnets are output to 
 ## Understand how modules work
 When using a new module for the first time, you must run either `terraform init` or `terraform get` to install the module. When either of these commands are run, Terraform will install any new modules in the `.terraform/modules` directory within your configuration's working directory. For local modules, Terraform will create a symlink to the module's directory. Because of this, any changes to local modules will be effective immediately, without having to re-run `terraform get`.
 
-Your .terraform/modules directory will look something like this:
+## Cleanup
 
-```
-.terraform/modules/
-|--ec2_instances
-|--modules.json
-|--vpc
-```
-
+Run `terraform destroy` to remove resources.
 
 
 
