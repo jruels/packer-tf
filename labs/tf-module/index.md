@@ -21,7 +21,8 @@ Now use modules to create an example AWS environment using a Virtual Private Clo
 
 Create working directory
 ```sh
-
+mkdir tf-lab5
+cd $_
 ```
 Clone the GitHub repository.
 ```sh
