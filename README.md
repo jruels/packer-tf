@@ -27,5 +27,5 @@ Lab 7: [Enable remote state](labs/tf-remote-state)
 ### Day 4
 Lab 8: [Import existing resources](labs/tf-import)   
 Lab 9: [Provisioners](labs/tf-provisioner)   
-Lab 10:[Use registry modules](labs/tf-modules)   
+Lab 10:[Use registry modules](labs/tf-module)   
 Lab 11:[Write your own module](labs/tf-write-module)   
