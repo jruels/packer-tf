@@ -62,7 +62,7 @@ After creating these directories, your configuration's directory structure will 
 ```
 
 
-Hosting a static website with S3 is a fairly common use case. While it isn't too difficult to figure out the correct configuration to provision a bucket this way, encapsulating this configuration within a module will provide your users with a quick and easy way create buckets they can use to host static websites that adhere to best practices. Another benefit of using a module is that the module name can describe exactly what buckets created with it are for. In this example, the `aws-s3-static-website-bucket` module creates s3 buckets that host static websites.
+Hosting a static website with S3 is a fairly common use case. While it isn't too difficult to figure out the correct configuration to provision a bucket this way, encapsulating this configuration within a module will provide your users with a quick and easy way create buckets they can use to host static websites that adhere to best practices. Another benefit of using a module is that the module name can describe exactly what buckets created with it are for. In this example, the `aws-s3-static-website-bucket` module creates S3 buckets that host static websites.
 
 You will work with three Terraform configuration files inside the `aws-s3-static-website-bucket` directory: `main.tf`, `variables.tf`, and `outputs.tf`.
 
@@ -106,6 +106,9 @@ This configuration creates a public S3 bucket hosting a website with an index pa
 You will notice that there is no provider block in this configuration. When Terraform processes a module block, it will inherit the provider from the enclosing configuration. Because of this, there's no need to include `provider` blocks in modules.
 
 Define the following variables in `variables.tf` inside the `modules/aws-s3-static-website-bucket` directory:
+
+- name: `bucket_name`
+- description: `Name of S3 bucket. Must be unique`
 
 ```hcl
 # Input variable definitions
@@ -216,3 +219,7 @@ terraform get
 Now that your new module is installed and configured, run `terraform apply` to provision your bucket.
 
 ## Congrats! 
+You have now configured and used your own module to create a static website. 
+
+## Cleanup
+Now clean everything up by running `terraform destroy`

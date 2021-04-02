@@ -29,3 +29,6 @@ Lab 8: [Import existing resources](labs/tf-import)
 Lab 9: [Provisioners](labs/tf-provisioner)   
 Lab 10:[Use registry modules](labs/tf-module)   
 Lab 11:[Write your own module](labs/tf-write-module)   
+
+### Day 5   
+Lab 12: [Capstone](labs/capstone)   
