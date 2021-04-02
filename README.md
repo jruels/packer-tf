@@ -8,6 +8,7 @@ This site includes the slides and labs for the Packer and Terraform class.
 [Slides day 2](https://www.dropbox.com/s/mo3rrhu8bejyn4y/Packer%20and%20Terraform-day2.pdf?dl=0)   
 [Slides day 3](https://www.dropbox.com/s/lkejdsxp23b4qmt/Packer%20and%20Terraform-day3.pdf?dl=0)   
 [Slides day 4](https://www.dropbox.com/s/qcn7qtoq975vwf5/Packer%20and%20Terraform-day4.pdf?dl=0)   
+[Slides day 5](https://www.dropbox.com/s/rq9mufcdjbfuu1u/Packer%20and%20Terraform-day5.pdf?dl=0)   
 
 ## Labs
 ### Day 1   
