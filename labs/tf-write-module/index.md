@@ -109,6 +109,11 @@ Define the following variables in `variables.tf` inside the `modules/aws-s3-stat
 
 - name: `bucket_name`
 - description: `Name of S3 bucket. Must be unique`
+- type: `string`
+
+name: `tags`
+description: `Tags to set on bucket.`
+default: `{}`
 
 ```hcl
 # Input variable definitions
@@ -133,22 +138,19 @@ You should also consider which values to add as outputs, since outputs are the o
 
 Add outputs to your module in the `outputs.tf` file inside the `modules/aws-s3-static-website-bucket` directory:
 
-# Output variable definitions
+## Output variable definitions
 
-output "arn" {
-  description = "ARN of the bucket"
-  value       = aws_s3_bucket.s3_bucket.arn
-}
+- name: `arn`
+- description: `ARN of the bucket`
+- value: `aws_s3_bucket.s3_bucket.arn`
 
-output "name" {
-  description = "Name (id) of the bucket"
-  value       = aws_s3_bucket.s3_bucket.id
-}
+- name: `name`
+- description: `Name (id) of the bucket`
+- value: `aws_s3_bucket.s3_bucket.id`
 
-output "domain" {
-  description = "Domain name of the bucket"
-  value       = aws_s3_bucket.s3_bucket.website_domain
-}
+- name: `domain`
+- description: `Domain name of the bucket`
+- value: `aws_s3_bucket.s3_bucket.website_domain`
 
 Like variables, outputs in modules perform the same function as they do in the root module but are accessed in a different way. A module's outputs can be accessed as read-only attributes on the module object, which is available within the configuration that calls the module. You can reference these outputs in expressions as `module.<MODULE NAME>.<OUTPUT NAME>`.
 
